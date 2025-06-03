@@ -43,6 +43,7 @@ export type RootStackParamList = {
   NotificationSetting: undefined;
   PasswordSetting: undefined;
   HelpFAQ: undefined;
+  MealPlans: undefined;
 };
 
 export type HomeStackParamList = {

@@ -41,6 +41,7 @@ import PasswordSetting from "../screens/Settings/PasswordSetting";
 import { ProfileProvider } from "../context/ProfileContext";
 import HelpFAQ from "../screens/HelpFAQ/HelpFAQ";
 import TrainingDetail from "../screens/TrainingDetail";
+import MealPlans from "../screens/MealPlans/MealPlans";
 
 const Stack = createStackNavigator();
 
@@ -542,6 +543,13 @@ const AppNavigator = () => {
           <Stack.Screen
             name="Nutrition"
             component={Nutrition}
+            options={{
+              cardStyleInterpolator: CardStyleInterpolators.forHorizontalIOS,
+            }}
+          />
+          <Stack.Screen
+            name="MealPlans"
+            component={MealPlans}
             options={{
               cardStyleInterpolator: CardStyleInterpolators.forHorizontalIOS,
             }}
