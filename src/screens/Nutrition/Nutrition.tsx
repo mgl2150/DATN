@@ -29,8 +29,6 @@ const RecipeCard: React.FC<RecipeCardProps> = ({ title, minutes, calories, image
 
 const Nutrition: React.FC = () => {
   const navigation = useNavigation<NavigationProps>();
-  const [activeTab, setActiveTab] = useState('mealPlans');
-
   return (
     <View style={styles.container}>
 
@@ -46,7 +44,6 @@ const Nutrition: React.FC = () => {
         </TouchableOpacity>
         <TouchableOpacity 
           style={[styles.tab]}
-          onPress={() => setActiveTab('mealIdeas')}
         >
           <Text style={[styles.tabText]}>
             Meal Ideas

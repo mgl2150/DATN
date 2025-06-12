@@ -2,8 +2,6 @@ import { StyleSheet, Dimensions } from "react-native";
 import { FONTS } from '../../constants/fonts';
 
 const { width, height } = Dimensions.get('window');
-const ITEM_WIDTH = 80;
-const INDICATOR_WIDTH = 2;
 
 export const styles = StyleSheet.create({
   container: {
@@ -12,10 +10,12 @@ export const styles = StyleSheet.create({
   },
   header: {
     paddingHorizontal: 20,
-    paddingTop: 40,
-    marginBottom: 20,
+    paddingTop: 50,
+    marginBottom: 30,
   },
   backButton: {
+    flexDirection: 'row',
+    alignItems: 'center',
     padding: 8,
   },
   backContent: {
@@ -39,96 +39,119 @@ export const styles = StyleSheet.create({
     paddingHorizontal: 20,
   },
   title: {
-    fontSize: 32,
+    fontSize: 28,
     fontFamily: FONTS.POPPINS.bold,
     color: '#FFFFFF',
     textAlign: 'center',
-    marginBottom: 16,
+    marginBottom: 20,
+    lineHeight: 36,
   },
   subtitleContainer: {
-    padding: 20,
-    width: width,
-    marginBottom: 40,
+    paddingHorizontal: 40,
+    marginBottom: 80,
   },
   subtitle: {
     fontSize: 14,
     fontFamily: FONTS.POPPINS.regular,
-    color: '#ffffff',
+    color: '#9CA3AF',
     textAlign: 'center',
-    lineHeight: 20,
+    lineHeight: 22,
+  },
+  dateFormat: {
+    fontSize: 32,
+    fontFamily: FONTS.POPPINS.bold,
+    color: '#FFFFFF',
+    textAlign: 'center',
+    marginBottom: 20,
+    letterSpacing: 2,
+  },
+  triangleIndicator: {
+    width: 0,
+    height: 0,
+    borderLeftWidth: 12,
+    borderRightWidth: 12,
+    borderBottomWidth: 12,
+    borderLeftColor: 'transparent',
+    borderRightColor: 'transparent',
+    borderBottomColor: '#E2F163',
+    marginBottom: 30,
+  },
+  datePickerContainer: {
+    flexDirection: 'row',
+    justifyContent: 'center',
+    alignItems: 'center',
+    gap: 16,
+    marginBottom: 40,
+  },
+  dropdownBox: {
+    backgroundColor: '#B3A0FF',
+    borderRadius: 12,
+    paddingVertical: 16,
     paddingHorizontal: 20,
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    minWidth: 100,
+    height: 56,
+  },
+  dropdownLabel: {
+    fontSize: 16,
+    fontFamily: FONTS.POPPINS.semiBold,
+    color: '#000000',
+    marginRight: 8,
+  },
+  pickerColumn: {
+    alignItems: 'center',
+  },
+  pickerLabel: {
+    fontSize: 16,
+    fontFamily: FONTS.POPPINS.semiBold,
+    color: '#FFFFFF',
+    marginBottom: 10,
+  },
+  picker: {
+    height: 150,
+    width: 80,
+    backgroundColor: '#B3A0FF',
+    borderRadius: 16,
+  },
+  pickerContent: {
+    paddingVertical: 50,
+  },
+  pickerItem: {
+    height: 50,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  pickerText: {
+    fontSize: 18,
+    fontFamily: FONTS.POPPINS.medium,
+    color: '#000000',
+  },
+  pickerTextSelected: {
+    fontSize: 22,
+    fontFamily: FONTS.POPPINS.bold,
+    color: '#000000',
   },
   agePickerContainer: {
     alignItems: 'center',
     marginTop: 40,
   },
-  selectedAgeText: {
-    fontSize: 80,
-    fontFamily: FONTS.POPPINS.bold,
-    color: '#FFFFFF',
-    marginBottom: 16,
-  },
-  triangleIcon: {
-    width: 24,
-    height: 24,
-    tintColor: '#E2F163',
-    marginBottom: 16,
-    transform: [{ rotate: '90deg' }],
-  },
-  ageSliderContainer: {
-    width: width,
-    height: 80,
-    justifyContent: 'center',
-    backgroundColor: '#B3A0FF',
-    position: 'relative',
-  },
-  ageSlider: {
-    paddingHorizontal: (width - ITEM_WIDTH) / 2,
-  },
-  ageItem: {
-    width: ITEM_WIDTH,
-    height: 80,
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
-  ageText: {
-    fontSize: 32,
-    fontFamily: FONTS.POPPINS.medium,
-    color: '#1C1C1E',
-  },
-  ageTextSelected: {
-    color: '#FFFFFF',
-    fontFamily: FONTS.POPPINS.bold,
-  },
-  selectedAgeIndicator: {
-    position: 'absolute',
-    left: (width - ITEM_WIDTH) / 2,
-    width: INDICATOR_WIDTH,
-    height: 80,
-    backgroundColor: '#FFFFFF',
-  },
-  selectedAgeIndicatorRight: {
-    position: 'absolute',
-    left: (width + ITEM_WIDTH) / 2 - INDICATOR_WIDTH,
-    width: INDICATOR_WIDTH,
-    height: 80,
-    backgroundColor: '#FFFFFF',
-  },
   continueButton: {
-    backgroundColor: 'rgba(255, 255, 255, 0.25)',
+    backgroundColor: 'rgba(255, 255, 255, 0.15)',
     borderRadius: 30,
-    height: 52,
-    width: width * 0.5,
+    height: 56,
+    width: width * 0.6,
     justifyContent: 'center',
     alignItems: 'center',
     position: 'absolute',
-    bottom: 40,
+    bottom: 60,
     borderWidth: 1,
-    borderColor: 'rgba(255, 255, 255, 0.5)',
+    borderColor: 'rgba(255, 255, 255, 0.3)',
   },
   continueButtonText: {
     color: '#FFFFFF',
     fontSize: 18,
-    fontFamily: FONTS.POPPINS.bold,
+    fontFamily: FONTS.POPPINS.semiBold,
   },
 }); 
