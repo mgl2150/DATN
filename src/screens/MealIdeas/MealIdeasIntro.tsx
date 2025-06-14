@@ -6,12 +6,12 @@ import { View, Text } from "react-native";
 
 
 
-const MealPlans = () => {
+const MealPlansIntro = () => {
   return (
     <View>
-      <Text>Meal Plans</Text>
+      <Text>Meal Ideas</Text>
     </View>
   );
 };
 
-export default MealPlans;
+export default MealPlansIntro;

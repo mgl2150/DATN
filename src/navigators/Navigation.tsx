@@ -41,8 +41,8 @@ import PasswordSetting from "../screens/Settings/PasswordSetting";
 import { ProfileProvider } from "../context/ProfileContext";
 import HelpFAQ from "../screens/HelpFAQ/HelpFAQ";
 import TrainingDetail from "../screens/TrainingDetail";
-import MealPlans from "../screens/MealPlans/MealPlans"; 
-import MealIdeas from "../screens/MealIdeas/MealIdeas";
+import MealPlansIntro from "../screens/MealPlans/MealPlansIntro";
+import MealIdeasIntro from "../screens/MealIdeas/MealIdeasIntro";
 
 const Stack = createStackNavigator();
 
@@ -549,8 +549,15 @@ const AppNavigator = () => {
             }}
           />
           <Stack.Screen
-            name="MealPlans"
-            component={MealPlans}
+            name="MealPlansIntro"
+            component={MealPlansIntro}
+            options={{
+              cardStyleInterpolator: CardStyleInterpolators.forHorizontalIOS,
+            }}
+          />
+          <Stack.Screen
+            name="MealIdeasIntro"
+            component={MealIdeasIntro}
             options={{
               cardStyleInterpolator: CardStyleInterpolators.forHorizontalIOS,
             }}

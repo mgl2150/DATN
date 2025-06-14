@@ -15,7 +15,7 @@ const Onboarding1 = () => {
   const navigation = useNavigation<NavigationProps>();
 
   const handleNext = () => {
-    navigation.navigate("MealPlans");
+    navigation.navigate("Home");
   };
 
   const handleSkip = () => {
