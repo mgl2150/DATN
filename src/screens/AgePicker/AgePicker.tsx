@@ -30,7 +30,7 @@ const AgePicker = () => {
   };
 
   const handleContinue = () => {
-    navigation.navigate("MealPlans");
+    navigation.navigate("WeightPicker");
   };
 
   // Generate arrays for date components

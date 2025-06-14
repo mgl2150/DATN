@@ -41,7 +41,8 @@ import PasswordSetting from "../screens/Settings/PasswordSetting";
 import { ProfileProvider } from "../context/ProfileContext";
 import HelpFAQ from "../screens/HelpFAQ/HelpFAQ";
 import TrainingDetail from "../screens/TrainingDetail";
-import MealPlans from "../screens/MealPlans/MealPlans";
+import MealPlans from "../screens/MealPlans/MealPlans"; 
+import MealIdeas from "../screens/MealIdeas/MealIdeas";
 
 const Stack = createStackNavigator();
 

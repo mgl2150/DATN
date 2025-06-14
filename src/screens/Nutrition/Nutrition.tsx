@@ -44,6 +44,7 @@ const Nutrition: React.FC = () => {
         </TouchableOpacity>
         <TouchableOpacity 
           style={[styles.tab]}
+          onPress={() => navigation.navigate("MealIdeas")}
         >
           <Text style={[styles.tabText]}>
             Meal Ideas
